@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+           
+        }
+        .container{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            color: white;
+            text-align: center;
+        }
+        .b1{
+            background-color: black;
+            width: 8%;
+        }
+        .middle{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .b2{
+            background-color: rgb(104, 212, 176);
+            height:50%;
+        }
+        .b3{
+            background-color: orange;
+            height: 50%;
+        }
+        .b4{
+            background-color: black;
+            width: 8%;
+        }
+        @media (max-width: 800px){
+            .container{
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            .b1{
+                width: 80%;
+                height: 20%;
+            }
+            .b4{
+                margin-top:10% ;
+                width: 80%;
+                height: 20%;
+            }
+            .b2,.b3{
+                height: 20%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="b1">Box 1</div>
+        <div class="middle">
+            <div class="b2">Box 2</div>
+            <div class="b3">Box 3</div>
+        </div>
+        <div class="b4">Box 4</div>
+
+    </div>
+</body>
+</html>
